@@ -6,8 +6,8 @@ const products = [
         id: 1, 
         name: "Casual Shirt", 
         category: "shirts", 
-        image: "https://m.media-amazon.com/images/I/31TEA0qrUBL._SX342_SY445_QL70_FMwebp_.jpg", 
-        link: "https://amzn.to/4nRHt7w" 
+        image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/APRIL/30/WH0feuaa_d72aa9d526da417d8db14ebe0573a2db.jpg", 
+        link: "https://myntr.in/cfaFin" 
     },
     /*{ 
         id: 2, 
@@ -142,3 +142,4 @@ function filterProducts() {
 // Initial Render
 // ============================
 renderProducts(products);
+
