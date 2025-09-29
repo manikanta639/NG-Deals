@@ -48,14 +48,14 @@ header h1 {
     padding: 12px 25px;
     border: none;
     border-radius: 30px;
-    background: #ff7e5f;
-    color: white;
+    background: #fbff4d;
+    color: black;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
 }
 .cta-btn:hover {
-    background: #feb47b;
+    background: #e0e642;
     transform: scale(1.1);
 }
 
@@ -228,7 +228,7 @@ header h1 {
     transition: 0.3s;
 }
 .buy-btn:hover {
-    background: #fbff4d;;
+    background: #e0e642;
     transform: scale(1.05);
 }
 
@@ -261,6 +261,7 @@ header h1 {
         flex: 0 0 auto; /* ✅ Prevent shrinking */
     }
 }
+
 
 
 
