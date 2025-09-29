@@ -31,7 +31,7 @@ const products = [
         link: "https://amzn.to/4nRHt7w" 
     },
     { 
-        id: 5, 
+        id: C5, 
         name: "Gift Combo Pack", 
         category: "combos", 
         image: "https://m.media-amazon.com/images/I/31TEA0qrUBL._SX342_SY445_QL70_FMwebp_.jpg", 
@@ -142,3 +142,4 @@ function filterProducts() {
 // Initial Render
 // ============================
 renderProducts(products);
+
