@@ -9,7 +9,7 @@ const products = [
         image: "https://m.media-amazon.com/images/I/31TEA0qrUBL._SX342_SY445_QL70_FMwebp_.jpg", 
         link: "https://amzn.to/4nRHt7w" 
     },
-    { 
+    /*{ 
         id: 2, 
         name: "Formal Pants", 
         category: "pants", 
@@ -77,7 +77,7 @@ const comboProducts = [
         category: "combos-detail", 
         image: "https://m.media-amazon.com/images/I/41Z5CjY+VUL._SX342_SY445_.jpg", 
         link: "https://amzn.to/4nRHt7w" 
-    }
+    }*/
 ];
 
 // ============================
@@ -142,5 +142,3 @@ function filterProducts() {
 // Initial Render
 // ============================
 renderProducts(products);
-
-
