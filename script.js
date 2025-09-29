@@ -95,19 +95,37 @@ function renderProducts(list) {
     list.forEach(product => {
         const card = document.createElement("div");
         card.className = "card";
+
         card.innerHTML = `
             <span class="product-number">#${product.id}</span>
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${product.image}" alt="${product.name}" class="product-image">
             <p class="product-name">${product.name}</p>
-            <a href="${product.link}" target="_blank">
-                <button class="buy-btn">Buy Now</button>
-            </a>
+            <button class="buy-btn">Buy Now</button>
         `;
 
-        // If it's a combo product, clicking opens comboProducts
+        // Open product link when image is clicked
+        const image = card.querySelector(".product-image");
+        if (product.link) {
+            image.addEventListener("click", () => {
+                window.open(product.link, "_blank");
+            });
+        }
+
+        // Open product link when Buy Now button is clicked
+        const button = card.querySelector(".buy-btn");
+        if (product.link) {
+            button.addEventListener("click", () => {
+                window.open(product.link, "_blank");
+            });
+        }
+
+        // If it's a combo product, clicking card shows combo list
         if (product.isCombo) {
-            card.addEventListener("click", () => {
-                renderProducts(comboProducts);
+            card.addEventListener("click", (e) => {
+                // prevent combo card click from triggering image/button link
+                if (!e.target.classList.contains("product-image") && !e.target.classList.contains("buy-btn")) {
+                    renderProducts(comboProducts);
+                }
             });
         }
 
@@ -142,6 +160,4 @@ function filterProducts() {
 // Initial Render
 // ============================
 renderProducts(products);
-
-
 
