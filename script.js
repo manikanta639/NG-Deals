@@ -31,7 +31,7 @@ const products = [
         image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/JANUARY/30/DlXJN34m_f0721222f4cd4ee9ba90b5a3942918e3.jpg", 
         link: "https://fkrt.co/U6hTEL" 
     },
-/*
+
 {
   id: 31,
   name: "Formal Pants",
@@ -45,7 +45,7 @@ const products = [
   category: "shoes",
   image: "https://m.media-amazon.com/images/I/31TEA0qrUBL._SX342_SY445_QL70_FMwebp_.jpg",
   link: "https://amzn.to/4nRHt7w"
-},
+},/*
 {
   id: 51,
   name: "Gift Combo Pack",
@@ -302,4 +302,5 @@ window.onload = function() {
     renderProducts(products);
     document.body.style.opacity = 1;
 };
+
 
