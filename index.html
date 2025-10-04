@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NEXTGEN LOOKS</title>
-  <link rel="icon" type="image/png" href="NG.png">
+  <link rel="icon" type="image/png" href="Nextgen Deals Logo.png">
   <style>
     /* === General Page Setup === */
     body {
@@ -42,27 +42,6 @@
       50% { transform: rotate(180deg) scale(1.2); }
       100% { transform: rotate(360deg) scale(1); }
     }
-/*
-    body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255, 0, 0, 0.486), rgba(0, 255, 0, 0.508), rgba(255, 0, 0, 0.788));
-  background-size: 300% 300%;
-  filter: blur(80px);
-  animation: fashionBG 20s ease infinite;
-  z-index: 0;
-  opacity: 0.7;
-}
-
-@keyframes fashionBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}*/
 
     /* === Neon Logo Box === */
     .logo-box {
@@ -165,12 +144,51 @@
       color: #ccc;
       z-index: 1;
     }
+
+    /* === Mobile Responsive Adjustments === */
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+        padding: 10px;
+        height: auto;
+      }
+
+      .logo-box {
+        padding: 0.5px;
+      }
+
+      img.logo {
+        width: 120px;
+      }
+
+      h1 {
+        margin: 20px 0 25px 0;
+        font-size: 24px;
+      }
+
+      button {
+        font-size: 18px;
+        padding: 12px 25px;
+      }
+
+      .logo-box::before,
+      .logo-box::after,
+      .bottom-glow,
+      .left-glow {
+        width: 3px;
+        height: 3px;
+      }
+
+      body::before {
+        filter: blur(100px);
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="logo-box">
-    <img src="NG.png" alt="Logo" class="logo">
+    <img src="Nextgen Deals Logo.png" alt="Logo" class="logo">
     <div class="bottom-glow"></div>
     <div class="left-glow"></div>
   </div>
@@ -195,4 +213,3 @@
 
 </body>
 </html>
-
