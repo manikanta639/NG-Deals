@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-        .redirect-btn {
-            padding: 15px 30px;
-            background: #fbff4d;
-            color: black;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
-        .redirect-btn:hover {
-            background: #e0e642;
-            transform: scale(1.05);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Looks</title>
+  <link rel="icon" type="image" href="NG.png">
+
+  <style>
+    /* ✅ Center everything */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: black;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* ✅ Button style */
+    .cta-btn {
+      padding: 20px 40px;
+      font-size: 22px;
+      border: none;
+      border-radius: 12px;
+      background: #4285F4; /* Chrome Blue */
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- ✅ Script for Chrome/Safari redirect -->
+  <script>
+    function openWebsite() {
+      const url = "https://yourwebsite.com"; // 👉 replace with your full site link
+      const ua = navigator.userAgent.toLowerCase();
+
+      if (ua.includes("android")) {
+        // Try Chrome deep link
+        window.location.href = "googlechrome://navigate?url=" + url;
+
+        // Fallback to normal browser if Chrome not available
+        setTimeout(() => {
+          window.location.href = url;
+        }, 1000);
+      } else {
+        // iPhone, iPad or others → open normally in Safari/default browser
+        window.location.href = url;
+      }
+    }
+  </script>
 </head>
+
 <body>
-    <h1>Almost There!</h1>
-    <p>Click below to go to the product page.</p>
-    <button class="redirect-btn" id="goProduct">Go to Product</button>
-
-    <script>
-        // Read affiliate link from URL
-        const params = new URLSearchParams(window.location.search);
-        const link = params.get('link');
-
-        const btn = document.getElementById('goProduct');
-        if(link) {
-            btn.addEventListener('click', () => {
-                window.open(link, '_blank'); // open affiliate link in new tab
-            });
-        } else {
-            btn.disabled = true;
-            btn.innerText = "Link not found!";
-        }
-
-        // Optional: Auto-redirect after 2 seconds
-        // setTimeout(() => { if(link) window.open(link, '_blank'); }, 2000);
-    </script>
+  <!-- ✅ Only one button on the page -->
+  <button class="cta-btn" onclick="openWebsite()">🚀 Open Full Website</button>
 </body>
 </html>
