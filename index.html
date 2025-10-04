@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>NEXTGEN LOOKS</title>
   <link rel="icon" type="image/png" href="NG.png">
   <style>
@@ -18,7 +18,7 @@
       height: 100vh;
       font-family: Arial, sans-serif;
       text-align: center;
-      overflow: hidden; /* prevent scrolling */
+      overflow: hidden;
       position: relative;
     }
 
@@ -39,7 +39,7 @@
 
     @keyframes plasmaSpin {
       0% { transform: rotate(0deg) scale(1); }
-      50% { transform: rotate(180deg) scale(1.2); }
+      50% { transform: rotate(180deg) scale(1); }
       100% { transform: rotate(360deg) scale(1); }
     }
 
@@ -145,17 +145,17 @@
       z-index: 1;
     }
 
-    /* === Mobile Responsive Adjustments === */
-    @media (max-width: 480px) {
+    /* === Mobile & Tablet Responsive Adjustments === */
+    @media (max-width: 768px) {
       body {
         font-size: 14px;
-        padding: 10px;
+        padding: 0;
         height: 100vh;
-        overflow: hidden; /* prevent scrolling */
+        overflow: hidden;
       }
 
       .logo-box {
-        padding: 0.5px; /* small padding */
+        padding: 0.5px;
       }
 
       img.logo {
@@ -173,13 +173,21 @@
       }
 
       body::before {
-        filter: blur(100px);
-        width: 150%;          /* smaller background size */
-        height: 150%;
-        top: -25%;
-        left: -25%;
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -50%;
+        filter: blur(120px);
       }
     }
+
+    /* Very small mobile devices */
+    @media (max-width: 480px) {
+      body::before {
+        filter: blur(100px);
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -210,4 +218,3 @@
 
 </body>
 </html>
-
