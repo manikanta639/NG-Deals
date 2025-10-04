@@ -4,34 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NEXTGEN LOOKS</title>
-  <link rel="icon" type="image/png" href="Nextgen Deals Logo.png">
+  <link rel="icon" type="image/png" href="NG.png">
   <style>
     /* === General Page Setup === */
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden; /* Prevent scrolling completely */
-      height: 100%;
-    }
-
     body {
+      margin: 0;
       background: #000;
       color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100vh;
       font-family: Arial, sans-serif;
       text-align: center;
+      overflow: hidden;
       position: relative;
     }
 
     /* === CYBER PLASMA BACKGROUND EFFECT === */
     body::before {
       content: "";
-      position: fixed; /* fixed prevents scroll */
-      top: 50%;
-      left: 50%;
+      position: absolute;
+      top: -50%;
+      left: -50%;
       width: 200%;
       height: 200%;
       background: conic-gradient(from 180deg at 50% 50%, #ff0000, #00ff00, #ff0000);
@@ -39,7 +35,6 @@
       animation: plasmaSpin 15s linear infinite;
       z-index: 0;
       opacity: 0.9;
-      transform: translate(-50%, -50%);
     }
 
     @keyframes plasmaSpin {
@@ -152,40 +147,40 @@
 
     /* === Mobile Responsive Adjustments === */
     @media (max-width: 480px) {
-      /* Adjust plasma background */
-      body::before {
-        width: 180%;
-        height: 180%;
-        filter: blur(120px);
-        min-width: 100vw;
-        min-height: 100vh;
+      body {
+        font-size: 14px;
+        padding: 10px;
+        height: 100vh;
       }
 
-      /* Logo size */
+      .logo-box {
+        padding: 0.5px;
+      }
+
       img.logo {
-        width: 130px;
+        width: 120px;
       }
 
-      /* Title size */
       h1 {
         font-size: 22px;
         margin: 15px 0 20px 0;
       }
 
-      /* Button size */
       button {
         font-size: 18px;
         padding: 12px 25px;
       }
 
-      /* Logo box borders */
-      .logo-box::before, /* top */
-      .logo-box::after,  /* right */
+      .logo-box::before,
+      .logo-box::after,
       .bottom-glow,
       .left-glow {
-        width: 5px;
-        height: 5px;
-        box-shadow: 0 0 12px #00ff00, 0 0 24px #00ff00;
+        width: 3px;
+        height: 3px;
+      }
+
+      body::before {
+        filter: blur(100px);
       }
     }
   </style>
@@ -193,7 +188,7 @@
 <body>
 
   <div class="logo-box">
-    <img src="Nextgen Deals Logo.png" alt="Logo" class="logo">
+    <img src="NG.png" alt="Logo" class="logo">
     <div class="bottom-glow"></div>
     <div class="left-glow"></div>
   </div>
