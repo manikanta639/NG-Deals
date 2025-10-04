@@ -7,27 +7,31 @@
   <link rel="icon" type="image/png" href="Nextgen Deals Logo.png">
   <style>
     /* === General Page Setup === */
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent any scrolling */
+      height: 100%;
+    }
+
+    body {
       background: #000;
       color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       font-family: Arial, sans-serif;
       text-align: center;
-      overflow: hidden;
       position: relative;
     }
 
     /* === CYBER PLASMA BACKGROUND EFFECT === */
     body::before {
       content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
+      position: fixed; /* Fixed prevents scrolling */
+      top: 50%;
+      left: 50%;
       width: 200%;
       height: 200%;
       background: conic-gradient(from 180deg at 50% 50%, #ff0000, #00ff00, #ff0000);
@@ -35,6 +39,7 @@
       animation: plasmaSpin 15s linear infinite;
       z-index: 0;
       opacity: 0.9;
+      transform: translate(-50%, -50%);
     }
 
     @keyframes plasmaSpin {
@@ -147,16 +152,6 @@
 
     /* === Mobile Responsive Adjustments === */
     @media (max-width: 480px) {
-      body {
-        font-size: 14px;
-        padding: 10px;
-        height: 100vh;
-      }
-
-      .logo-box {
-        padding: 0.5px;
-      }
-
       img.logo {
         width: 120px;
       }
@@ -180,6 +175,8 @@
       }
 
       body::before {
+        width: 150%; /* reduced to prevent any scroll */
+        height: 150%;
         filter: blur(100px);
       }
     }
