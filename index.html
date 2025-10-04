@@ -16,6 +16,7 @@
       background: black;
       margin: 0;
       font-family: Arial, sans-serif;
+      flex-direction: column;
     }
     /* ✅ Button style */
     .cta-btn {
@@ -27,34 +28,26 @@
       color: white;
       cursor: pointer;
     }
+    /* ✅ Small help text */
+    .note {
+      color: white;
+      font-size: 14px;
+      margin-top: 12px;
+    }
   </style>
 
-  <!-- ✅ Script for Chrome/Safari redirect -->
+  <!-- ✅ Clean JS -->
   <script>
     function openWebsite() {
-      const url = "https://nextgenlooks.netlify.app/"; // 👉 replace with your full site link
-      const ua = navigator.userAgent.toLowerCase();
-
-      if (ua.includes("android")) {
-        // Try Chrome deep link
-        window.location.href = "googlechrome://navigate?url=" + url;
-
-        // Fallback to normal browser if Chrome not available
-        setTimeout(() => {
-          window.location.href = url;
-        }, 1000);
-      } else {
-        // iPhone, iPad or others → open normally in Safari/default browser
-        window.location.href = url;
-      }
+      const url = "https://nextgenlooks.netlify.app/"; // your site
+      window.location.href = url; // ✅ Safe redirect
     }
   </script>
 </head>
 
 <body>
-  <!-- ✅ Only one button on the page -->
+  <!-- ✅ Only button -->
   <button class="cta-btn" onclick="openWebsite()">🚀 Open Full Website</button>
+  <p class="note">👉 If it opens inside Instagram, tap ⋮ and choose "Open in Chrome"</p>
 </body>
 </html>
-
-
