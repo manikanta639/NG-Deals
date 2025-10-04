@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open in Chrome</title>
+<style>
+  body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  button {
+    background: #4285F4;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <button onclick="openInChrome()">Open Website in Chrome</button>
+  <script>
+    function openInChrome() {
+      window.location.href = "intent://ngdeals.netlify.app/#Intent;scheme=https;package=com.android.chrome;end";
+    }
+  </script>
+</body>
+</html>
