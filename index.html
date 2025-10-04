@@ -18,7 +18,7 @@
       height: 100vh;
       font-family: Arial, sans-serif;
       text-align: center;
-      overflow: hidden;
+      overflow: hidden; /* prevent scrolling */
       position: relative;
     }
 
@@ -151,10 +151,11 @@
         font-size: 14px;
         padding: 10px;
         height: 100vh;
+        overflow: hidden; /* prevent scrolling */
       }
 
       .logo-box {
-        padding: 0.5px;
+        padding: 0.5px; /* small padding */
       }
 
       img.logo {
@@ -169,14 +170,6 @@
       button {
         font-size: 18px;
         padding: 12px 25px;
-      }
-
-      .logo-box::before,
-      .logo-box::after,
-      .bottom-glow,
-      .left-glow {
-        width: 3px;
-        height: 3px;
       }
 
       body::before {
