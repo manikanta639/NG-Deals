@@ -2,12 +2,13 @@
 // Product Data
 // =====================
 const products = [
+  
   { 
-    id: 1, 
-    name: "Led Light For Bike", 
-    category: "watches", 
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shopsy-light/0/q/8/colours-7-multiple-flashing-pattern-led-motorcycle-bike-pack-of-original-imagrmcrbnxy3jwv.jpeg?q=70&crop=false", 
-    link: "https://fkrt.co/cs4UBy"
+    id: 3, 
+    name: "Flickering String Lights", 
+    category: "Electronics", 
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/i/z/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhghpvstnt.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/VJeUBD"
   },
   { 
     id: 2, 
@@ -17,11 +18,11 @@ const products = [
     link: "https://fkrt.co/Nx9GFJ"
   },
   { 
-    id: 3, 
-    name: "Flickering String Lights", 
-    category: "Electronics", 
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/i/z/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhghpvstnt.jpeg?q=70&crop=false", 
-    link: "https://fkrt.co/VJeUBD"
+    id: 1, 
+    name: "Led Light For Bike", 
+    category: "watches", 
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shopsy-light/0/q/8/colours-7-multiple-flashing-pattern-led-motorcycle-bike-pack-of-original-imagrmcrbnxy3jwv.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/cs4UBy"
   },
   /*{ 
     id: 4, 
@@ -51,34 +52,8 @@ const products = [
     image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mixer-grinder-juicer/o/w/j/-original-imagg8tzqzkfggfs.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/cs4UBy"
   },*/
-  { 
-        id: 4, 
-        name: "Striped Shirt", 
-        category: "shirts", 
-        image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/MAY/7/YPZwCB9L_6ce665d1fdb343f388127e471c5bdb09.jpg", 
-        link: "",
-        isCombo: true 
-    },
 ];
-// Combo Products Data (Scalable)
-const comboProducts = {
-3: [
-  {
-    name: "Shoe 1",
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/a/c/o/-original-imahgcstr7c9y6hh.jpeg?q=70&crop=false",
-    link: "http://bit.ly/48e06hf"
-  },
-  {
-    name: "Shoe 2",
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/y/v/4/-original-imahgcsvhcbqyr6y.jpeg?q=70&crop=false",
-    link: "http://bit.ly/4mNHIzs"
-  },
-  {
-    name: "Shoe 3",
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/l/f/p/-original-imahgcsvkfjz8nxy.jpeg?q=70&crop=false",
-    link: "http://bit.ly/4mLUfmQ"
-  }
-  ],
+
 
 // =====================
 // Page Animation
@@ -240,6 +215,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
