@@ -1,6 +1,27 @@
 // Sample Product Data
 const products = [
     { 
+        id: 1, 
+        name: "Led Light For Bike", 
+        category: "watches", 
+        image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shopsy-light/0/q/8/colours-7-multiple-flashing-pattern-led-motorcycle-bike-pack-of-original-imagrmcrbnxy3jwv.jpeg?q=70&crop=false", 
+        link: "https://fkrt.co/cs4UBy"
+    },
+    { 
+        id: 2, 
+        name: "Solar Wall Lights", 
+        category: "watches", 
+        image: "https://rukminim2.flixcart.com/image/832/832/xif0q/solar-light-set/g/b/k/1-hhsol-99-6-rgb-1-8-homehop-original-imahfcuducj6msgv.jpeg?q=70&crop=false", 
+        link: "https://fkrt.co/Nx9GFJ"
+    },
+    { 
+        id: 3, 
+        name: "Flickering String Lights", 
+        category: "watches", 
+        image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/i/z/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhghpvstnt.jpeg?q=70&crop=false", 
+        link: "https://fkrt.co/VJeUBD"
+    },
+    /*{ 
         id: 6, 
         name: "Lee Cooper", 
         category: "watches", 
@@ -320,4 +341,5 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
