@@ -1,59 +1,71 @@
 // =====================
-// Product Data
+// Sample Product Data
 // =====================
 const products = [
-  
   { 
-    id: 3, 
-    name: "Flickering String Lights", 
-    category: "Home Appliances", 
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/i/z/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhghpvstnt.jpeg?q=70&crop=false", 
-    link: "https://fkrt.co/VJeUBD"
-  },
-  { 
-    id: 2, 
-    name: "Solar Wall Lights", 
-    category: "Home Appliances", 
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/solar-light-set/g/b/k/1-hhsol-99-6-rgb-1-8-homehop-original-imahfcuducj6msgv.jpeg?q=70&crop=false", 
-    link: "https://fkrt.co/Nx9GFJ"
-  },
-  { 
-    id: 1, 
-    name: "Led Light For Bike", 
-    category: "Home Appliances", 
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shopsy-light/0/q/8/colours-7-multiple-flashing-pattern-led-motorcycle-bike-pack-of-original-imagrmcrbnxy3jwv.jpeg?q=70&crop=false", 
-    link: "https://fkrt.co/cs4UBy"
-  },
-  /*{ 
-    id: 4, 
-    name: "Smart Watch", 
-    category: "Electronics", 
-    image: "https://m.media-amazon.com/images/I/31TEA0qrUBL._SX342_SY445_QL70_FMwebp_.jpg", 
-    link: "https://amzn.to/4nRHt7w"
+    id: 6, 
+    name: "Lee Cooper", 
+    category: "watches", 
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/t/m/h/-original-imahftq4tu6ewft2.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/rmZMWb"
   },
   { 
     id: 5, 
-    name: "Gift Combo Pack", 
-    category: "combos", 
-    image: "https://m.media-amazon.com/images/I/41TCyNn0GDL._SX342_SY445_.jpg", 
-    link: "https://amzn.to/4nRHt7w"
-  },
-  { 
-    id: 6, 
-    name: "Casual Shirt", 
-    category: "Fashion", 
+    name: "Shirt", 
+    category: "shirts", 
     image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/30149421/2024/7/8/7305f9f3-5a26-40cd-80ea-f6cb09e6a3601720431638644CantabilMenOpaqueCheckedCasualShirt4.jpg", 
     link: "https://myntr.in/p8WCHF"
   },
   { 
-    id: 7, 
-    name: "Mixer Grinder", 
-    category: "Home Appliances", 
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mixer-grinder-juicer/o/w/j/-original-imagg8tzqzkfggfs.jpeg?q=70&crop=false", 
-    link: "https://fkrt.co/cs4UBy"
-  },*/
+    id: 4, 
+    name: "Striped Shirt", 
+    category: "shirts", 
+    image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/MAY/7/YPZwCB9L_6ce665d1fdb343f388127e471c5bdb09.jpg", 
+    link: "",
+    isCombo: true 
+  },
+  { 
+    id: 3, 
+    name: "Sneakers", 
+    category: "shoes", 
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/a/c/o/-original-imahgcstr7c9y6hh.jpeg?q=70&crop=false", 
+    link: "", 
+    isCombo: true 
+  },
+  { 
+    id: 2, 
+    name: "Casual Shirt", 
+    category: "shirts", 
+    image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/APRIL/30/WH0feuaa_d72aa9d526da417d8db14ebe0573a2db.jpg", 
+    link: "https://myntr.in/4jP5Nv" 
+  },
+  { 
+    id: 1, 
+    name: "Checked Casual Shirt", 
+    category: "shirts", 
+    image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/JANUARY/30/DlXJN34m_f0721222f4cd4ee9ba90b5a3942918e3.jpg", 
+    link: "https://myntr.in/yPXgYo" 
+  }
 ];
 
+// =====================
+// Combo Products
+// =====================
+const comboProducts = {
+  3: [
+    { name: "Shoe 1", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/a/c/o/-original-imahgcstr7c9y6hh.jpeg?q=70", link: "http://bit.ly/48e06hf" },
+    { name: "Shoe 2", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/y/v/4/-original-imahgcsvhcbqyr6y.jpeg?q=70", link: "http://bit.ly/4mNHIzs" },
+    { name: "Shoe 3", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/l/f/p/-original-imahgcsvkfjz8nxy.jpeg?q=70", link: "http://bit.ly/4mLUfmQ" },
+    { name: "Shoe 4", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/a/b/b/-original-imahgcstz6guamgu.jpeg?q=70", link: "http://bit.ly/3WrzFgN" },
+    { name: "Shoe 5", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/l/f/2/-original-imahgbrvwfjpg9fh.jpeg?q=70", link: "http://bit.ly/3WjUBX0" }
+  ],
+  4: [
+    { name: "Shirt 1", image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/MAY/7/XDhBEReQ_8ce024c24b054112852f9c9e25706a39.jpg", link: "http://bit.ly/434fclZ" },
+    { name: "Shirt 2", image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/MAY/7/iETIOqml_093de7982597463cb30609ae0c945f3c.jpg", link: "http://bit.ly/4o28Knx" },
+    { name: "Shirt 3", image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/33988086/2025/5/16/3da1f93d-3955-43f7-b3de-5f780e778a6a1747373637174-HERENOW-Men-Tartan-Checks-Casual-Shirt-8391747373636541-1.jpg", link: "http://bit.ly/4o6ozKg" },
+    { name: "Shirt 4", image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/33203161/2025/3/20/47df1e5d-2cb3-45de-9050-a72cbfaa097c1742480051691-HERENOW-Men-Opaque-Striped-Casual-Shirt-5041742480051024-4.jpg", link: "http://bit.ly/4nCmCFs" }
+  ]
+};
 
 // =====================
 // Page Animation
@@ -68,7 +80,6 @@ function animatePageTransition(callback) {
   }, 150);
 }
 
-
 // =====================
 // Show/Hide Header
 // =====================
@@ -78,7 +89,6 @@ function toggleHeaderVisibility(show) {
   if (header) header.style.display = show ? "block" : "none";
   if (shopNowDiv) shopNowDiv.style.display = show ? "block" : "none";
 }
-
 
 // =====================
 // Render Products
@@ -107,7 +117,16 @@ function renderProducts(list, hideHeader = false) {
     const image = card.querySelector(".product-image");
     const button = card.querySelector(".buy-btn");
 
-    if (product.link) {
+    if (product.isCombo && comboProducts[product.id]) {
+      const showCombo = () => {
+        animatePageTransition(() => {
+          renderProducts(comboProducts[product.id], true);
+          history.pushState({ page: "combo", comboId: product.id }, "Combo", `#combo-${product.id}`);
+        });
+      };
+      image.addEventListener("click", showCombo);
+      button.addEventListener("click", showCombo);
+    } else if (product.link) {
       const openLink = () => window.open(product.link, "_blank");
       image.addEventListener("click", openLink);
       button.addEventListener("click", openLink);
@@ -117,33 +136,14 @@ function renderProducts(list, hideHeader = false) {
   });
 }
 
-
 // =====================
-// ✅ Dynamic Category Buttons
-// =====================
-function generateCategoryButtons() {
-  const categoryContainer = document.querySelector(".categories");
-  categoryContainer.innerHTML = "";
-
-  // Get all unique categories
-  const categories = ["all", ...new Set(products.map(p => p.category))];
-
-  categories.forEach(cat => {
-    const btn = document.createElement("button");
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    btn.onclick = () => filterByCategory(cat);
-    categoryContainer.appendChild(btn);
-  });
-}
-
-
-// =====================
-// ✅ Flexible Filter by Category
+// Filter by Category (Dynamic & Case-Insensitive)
 // =====================
 function filterByCategory(category) {
   const selected = category.toLowerCase().trim();
 
-  if (selected === "all" || selected === "") {
+  // "All" button shows everything
+  if (selected === "all") {
     animatePageTransition(() => {
       renderProducts(products);
       history.pushState({ page: "home" }, "Home", "#home");
@@ -151,20 +151,16 @@ function filterByCategory(category) {
     return;
   }
 
-  const filtered = products.filter(p => 
+  // Filter safely regardless of case or spaces
+  const filtered = products.filter(p =>
     p.category && p.category.toLowerCase().trim() === selected
   );
 
   animatePageTransition(() => {
-    if (filtered.length === 0) {
-      renderProducts(products); // fallback to all
-    } else {
-      renderProducts(filtered);
-    }
+    renderProducts(filtered.length > 0 ? filtered : products);
     history.pushState({ page: category }, category, `#${category}`);
   });
 }
-
 
 // =====================
 // Search Products
@@ -172,11 +168,11 @@ function filterByCategory(category) {
 function filterProducts() {
   const searchValue = document.getElementById("search").value.toLowerCase();
   const filtered = products.filter(p =>
-    p.name.toLowerCase().includes(searchValue) || (p.id && p.id.toString().includes(searchValue))
+    p.name.toLowerCase().includes(searchValue) ||
+    (p.id && p.id.toString().includes(searchValue))
   );
   animatePageTransition(() => renderProducts(filtered));
 }
-
 
 // =====================
 // Home Page
@@ -189,13 +185,14 @@ function showHomePage() {
   });
 }
 
-
 // =====================
 // Handle Browser Back/Forward
 // =====================
 window.onpopstate = function(event) {
   if (event.state) {
-    if (event.state.page === "home") {
+    if (event.state.page === "combo" && event.state.comboId) {
+      renderProducts(comboProducts[event.state.comboId], true);
+    } else if (event.state.page === "home") {
       showHomePage();
     } else {
       filterByCategory(event.state.page);
@@ -205,18 +202,11 @@ window.onpopstate = function(event) {
   }
 };
 
-
 // =====================
 // Init
 // =====================
 window.onload = function() {
   history.replaceState({ page: "home" }, "Home", "#home");
-  generateCategoryButtons(); // dynamically create categories
   renderProducts(products);
   document.body.style.opacity = 1;
 };
-
-
-
-
-
