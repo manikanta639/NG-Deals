@@ -205,7 +205,7 @@ header h1 {
     width: 100%;                      /* fill card width */
     height: 300px;                     /* desktop height */
     object-fit: cover;                 /* crop to fill container */
-    object-position: top;              /* show face + hands */
+    object-position: center;              /* show face + hands */
     border-radius: 8px; /* top-left, top-right, bottom-right, bottom-left */
     margin-bottom: 10px;
     display: block;
@@ -260,12 +260,12 @@ header h1 {
    BUY NOW BUTTON
    ===================== */
 .buy-btn {
-    margin-top: -10px;
+    margin-top: -6px;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background: #000354;
-    color: white;
+    background: #fbff4d;
+    color: black;
     font-weight: 550;
     font-size: 14px;
     cursor: pointer;
@@ -295,7 +295,7 @@ header h1 {
 @media (max-width: 1024px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        gap: 20px;
     }
 }
 
@@ -303,7 +303,7 @@ header h1 {
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 20px;
     }
     .card img {
         height: 200px;  /* mobile-friendly image height */
@@ -314,7 +314,7 @@ header h1 {
 @media (max-width: 480px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 18px;
     }
     .card img {
         height: 180px;
@@ -337,16 +337,7 @@ header h1 {
     }
 }
 
-/* Fade effect */
-.fade-out { opacity: 0; transition: opacity 0.3s ease; }
-#product-container { transition: opacity 0.3s ease; }
 
-/* Slide-up animation for cards */
-@keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-.card.slide-up {
-  animation: slideUp 0.4s ease forwards;
-}
+
+
 
