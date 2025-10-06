@@ -1,6 +1,20 @@
 // Sample Product Data
 const products = [
     { 
+        id: 6, 
+        name: "Lee Cooper", 
+        category: "watches", 
+        image: "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/t/m/h/-original-imahftq4tu6ewft2.jpeg?q=70&crop=false", 
+        link: "https://fkrt.co/rmZMWb"
+    },
+    { 
+        id: 5, 
+        name: "Shirt", 
+        category: "shirts", 
+        image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/30149421/2024/7/8/7305f9f3-5a26-40cd-80ea-f6cb09e6a3601720431638644CantabilMenOpaqueCheckedCasualShirt4.jpg", 
+        link: "https://myntr.in/p8WCHF"
+    },
+    { 
         id: 4, 
         name: "Striped Shirt", 
         category: "shirts", 
@@ -11,7 +25,7 @@ const products = [
     { 
         id: 3, 
         name: "Sneakers", 
-        category: "combos", 
+        category: "shoes", 
         image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/a/c/o/-original-imahgcstr7c9y6hh.jpeg?q=70&crop=false", 
         link: "", 
         isCombo: true 
@@ -21,7 +35,7 @@ const products = [
         name: "Casual Shirt", 
         category: "shirts", 
         image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/APRIL/30/WH0feuaa_d72aa9d526da417d8db14ebe0573a2db.jpg", 
-        link: "https://fkrt.co/U6hTEL" 
+        link: "https://myntr.in/4jP5Nv" 
     },
     
     { 
@@ -29,7 +43,7 @@ const products = [
         name: "Checked Casual Shirt", 
         category: "shirts", 
         image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/JANUARY/30/DlXJN34m_f0721222f4cd4ee9ba90b5a3942918e3.jpg", 
-        link: "https://fkrt.co/U6hTEL" 
+        link: "https://myntr.in/yPXgYo" 
     },
 /*
 {
@@ -166,142 +180,144 @@ const comboProducts = {
 ]
 */
 };
+
+
+
+
+
+
 // =====================
-// Page Animation Helpers
+// Page Animation
 // =====================
 function animatePageTransition(callback) {
-    const body = document.body;
-    body.style.transition = "opacity 0.2s ease-out";
-    body.style.opacity = 0;
-    setTimeout(() => {
-        callback();
-        body.style.opacity = 1;
-    }, 150);
+  const body = document.body;
+  body.style.transition = "opacity 0.2s ease-out";
+  body.style.opacity = 0;
+  setTimeout(() => {
+    callback();
+    body.style.opacity = 1;
+  }, 150);
 }
 
 // =====================
-// Hide/Show Header
+// Show/Hide Header
 // =====================
 function toggleHeaderVisibility(show) {
-    const header = document.getElementById("site-header");
-    if (header) header.style.display = show ? "block" : "none";
+  const header = document.getElementById("site-header");
+  const shopNowDiv = document.querySelector(".cta-btn")?.parentElement;
+  if (header) header.style.display = show ? "block" : "none";
+  if (shopNowDiv) shopNowDiv.style.display = show ? "block" : "none";
 }
 
 // =====================
 // Render Products
 // =====================
 function renderProducts(list, hideHeader = false) {
-    toggleHeaderVisibility(!hideHeader);
-    const container = document.getElementById("product-container");
-    container.innerHTML = "";
-    container.scrollTop = 0;
+  toggleHeaderVisibility(!hideHeader);
+  const container = document.getElementById("product-container");
+  container.innerHTML = "";
 
-    if (!list || list.length === 0) {
-        container.innerHTML = `<p>No products found.</p>`;
-        return;
+  if (!list || list.length === 0) {
+    container.innerHTML = `<p>No products found.</p>`;
+    return;
+  }
+
+  list.forEach(product => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      ${product.id ? `<span class="product-number">#${product.id}</span>` : ""}
+      <img src="${product.image}" alt="${product.name}" class="product-image" />
+      <p class="product-name">${product.name}</p>
+      <button class="buy-btn">Buy Now</button>
+    `;
+
+    const image = card.querySelector(".product-image");
+    const button = card.querySelector(".buy-btn");
+
+    if (product.isCombo && comboProducts[product.id]) {
+      const showCombo = () => {
+        animatePageTransition(() => {
+          renderProducts(comboProducts[product.id], true);
+          history.pushState({ page: "combo", comboId: product.id }, "Combo", `#combo-${product.id}`);
+        });
+      };
+      image.addEventListener("click", showCombo);
+      button.addEventListener("click", showCombo);
+    } else if (product.link) {
+      const openLink = () => window.open(product.link, "_blank");
+      image.addEventListener("click", openLink);
+      button.addEventListener("click", openLink);
     }
 
-    list.forEach(product => {
-        const card = document.createElement("div");
-        card.className = "card";
-
-        card.innerHTML = `
-            ${product.id ? `<span class="product-number">#${product.id}</span>` : ""}
-            <img src="${product.image}" alt="${product.name}" class="product-image" />
-            <p class="product-name">${product.name}</p>
-            <button class="buy-btn">Buy Now</button>
-        `;
-
-        const image = card.querySelector(".product-image");
-        const button = card.querySelector(".buy-btn");
-
-        if (product.isCombo && comboProducts[product.id]) {
-            const showCombo = () => {
-                animatePageTransition(() => {
-                    renderProducts(comboProducts[product.id], true);
-                    history.pushState({ page: "combo", comboId: product.id }, "Combo Products", `#combo-${product.id}`);
-                });
-            };
-            image.addEventListener("click", showCombo);
-            button.addEventListener("click", showCombo);
-        } else if (product.link) {
-            const openRedirect = () => {
-                const encodedLink = encodeURIComponent(product.link);
-                window.location.href = `redirect.html?link=${encodedLink}`;
-            };
-            image.addEventListener("click", openRedirect);
-            button.addEventListener("click", openRedirect);
-        }
-
-        container.appendChild(card);
-    });
+    container.appendChild(card);
+  });
 }
 
 // =====================
 // Filter by Category
 // =====================
 function filterByCategory(category) {
-    if (category === "all") {
-        animatePageTransition(() => {
-            renderProducts(products);
-            history.pushState({ page: "home" }, "Home", "#home");
-        });
-    } else {
-        const filtered = products.filter(p => p.category === category);
-        animatePageTransition(() => {
-            renderProducts(filtered);
-            history.pushState({ page: category }, category.charAt(0).toUpperCase() + category.slice(1), `#${category}`);
-        });
-    }
+  if (category === "all") {
+    animatePageTransition(() => {
+      renderProducts(products);
+      history.pushState({ page: "home" }, "Home", "#home");
+    });
+  } else {
+    const filtered = products.filter(p => p.category === category);
+    animatePageTransition(() => {
+      renderProducts(filtered);
+      history.pushState({ page: category }, category, `#${category}`);
+    });
+  }
 }
 
 // =====================
 // Search Products
 // =====================
 function filterProducts() {
-    const searchValue = document.getElementById("search").value.toLowerCase();
-    const filtered = products.filter(p =>
-        p.name.toLowerCase().includes(searchValue) || (p.id && p.id.toString().includes(searchValue))
-    );
-    animatePageTransition(() => renderProducts(filtered));
+  const searchValue = document.getElementById("search").value.toLowerCase();
+  const filtered = products.filter(p =>
+    p.name.toLowerCase().includes(searchValue) || (p.id && p.id.toString().includes(searchValue))
+  );
+  animatePageTransition(() => renderProducts(filtered));
 }
 
 // =====================
-// Show Home Page
+// Home Page
 // =====================
 function showHomePage() {
-    animatePageTransition(() => {
-        renderProducts(products);
-        document.getElementById("search").value = "";
-        history.replaceState({ page: "home" }, "Home", "#home");
-    });
+  animatePageTransition(() => {
+    renderProducts(products);
+    document.getElementById("search").value = "";
+    history.replaceState({ page: "home" }, "Home", "#home");
+  });
 }
 
 // =====================
-// Handle Back/Forward
+// Handle Browser Back/Forward
 // =====================
 window.onpopstate = function(event) {
-    if (event.state) {
-        if (event.state.page === "combo" && event.state.comboId) {
-            animatePageTransition(() => renderProducts(comboProducts[event.state.comboId], true));
-        } else if (event.state.page === "home" || event.state.page === "all") {
-            showHomePage();
-        } else {
-            filterByCategory(event.state.page);
-        }
+  if (event.state) {
+    if (event.state.page === "combo" && event.state.comboId) {
+      renderProducts(comboProducts[event.state.comboId], true);
+    } else if (event.state.page === "home") {
+      showHomePage();
     } else {
-        showHomePage();
+      filterByCategory(event.state.page);
     }
+  } else {
+    showHomePage();
+  }
 };
 
 // =====================
-// Initialize Page
+// Init
 // =====================
 window.onload = function() {
-    history.replaceState({ page: "home" }, "Home", "#home");
-    renderProducts(products);
-    document.body.style.opacity = 1;
+  history.replaceState({ page: "home" }, "Home", "#home");
+  renderProducts(products);
+  document.body.style.opacity = 1;
 };
-
-
 
