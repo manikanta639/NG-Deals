@@ -120,7 +120,7 @@ const products = [
 ];
 
 // Combo Products Data (Scalable)
-const comboProducts = {
+/*const comboProducts = {
 3: [
   {
     name: "Shoe 1",
@@ -169,7 +169,7 @@ const comboProducts = {
     image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/33203161/2025/3/20/47df1e5d-2cb3-45de-9050-a72cbfaa097c1742480051691-HERENOW-Men-Opaque-Striped-Casual-Shirt-5041742480051024-4.jpg",
     link: "http://bit.ly/4nCmCFs"
   }
-],
+],*/
 /*-------------------------------------------------------------------------------------------------------------*/    
 /*7: [
   {
@@ -341,5 +341,6 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
