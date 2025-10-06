@@ -51,8 +51,34 @@ const products = [
     image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mixer-grinder-juicer/o/w/j/-original-imagg8tzqzkfggfs.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/cs4UBy"
   },*/
+  { 
+        id: 4, 
+        name: "Striped Shirt", 
+        category: "shirts", 
+        image: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2025/MAY/7/YPZwCB9L_6ce665d1fdb343f388127e471c5bdb09.jpg", 
+        link: "",
+        isCombo: true 
+    },
 ];
-
+// Combo Products Data (Scalable)
+const comboProducts = {
+3: [
+  {
+    name: "Shoe 1",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/a/c/o/-original-imahgcstr7c9y6hh.jpeg?q=70&crop=false",
+    link: "http://bit.ly/48e06hf"
+  },
+  {
+    name: "Shoe 2",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/y/v/4/-original-imahgcsvhcbqyr6y.jpeg?q=70&crop=false",
+    link: "http://bit.ly/4mNHIzs"
+  },
+  {
+    name: "Shoe 3",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/l/f/p/-original-imahgcsvkfjz8nxy.jpeg?q=70&crop=false",
+    link: "http://bit.ly/4mLUfmQ"
+  }
+  ],
 
 // =====================
 // Page Animation
@@ -214,5 +240,6 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
