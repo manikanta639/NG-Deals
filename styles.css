@@ -264,8 +264,8 @@ header h1 {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background: #fbff4d;
-    color: black;
+    background: #000354;
+    color: white;
     font-weight: 550;
     font-size: 14px;
     cursor: pointer;
@@ -349,3 +349,4 @@ header h1 {
 .card.slide-up {
   animation: slideUp 0.4s ease forwards;
 }
+
