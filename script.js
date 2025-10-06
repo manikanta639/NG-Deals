@@ -23,7 +23,7 @@ const products = [
     image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/i/z/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhghpvstnt.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/VJeUBD"
   },
-  { 
+  /*{ 
     id: 4, 
     name: "Smart Watch", 
     category: "Electronics", 
@@ -50,7 +50,7 @@ const products = [
     category: "Home Appliances", 
     image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mixer-grinder-juicer/o/w/j/-original-imagg8tzqzkfggfs.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/cs4UBy"
-  },
+  },*/
 ];
 
 
@@ -214,3 +214,4 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
