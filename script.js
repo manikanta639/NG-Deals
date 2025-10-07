@@ -53,11 +53,11 @@ const products = [
   { 
     id: 7, name: "", category: "", image: "", 
     link: ""
-  },
-  { 
-    id: 6, name: "", category: "", image: "", 
-    link: ""
   },*/
+  { 
+    id: 6, name: "Wire Stripper", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/plier/h/z/t/10-5-in-1-multifunctional-wire-stripper-combination-original-imah5ggstt5ahjaf.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/YhPPww"
+  },
   { 
     id: 5, name: "WiFi Bulb Camera", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/home-security-camera/0/g/z/2-wifi-bulb-camera-1080p-with-360-view-wireless-smart-ip-cctv-original-imahfcty5kpwgtjk.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/s0H6mm"
@@ -252,6 +252,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
