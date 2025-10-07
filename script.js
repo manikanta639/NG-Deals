@@ -1,6 +1,72 @@
 // Sample Product Data
 const products = [
-  
+  /*
+  { 
+    id: 22, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 21, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 20, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 19, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 18, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 17, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 16, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 15, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 14, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 13, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 12, name: "", category: "", image: "", 
+    link: ""
+  },{ 
+    id: 11, name: "", category: "", image: "", 
+    link: ""
+  },
+  { 
+    id: 10, name: "", category: "", image: "", 
+    link: ""
+  },
+  { 
+    id: 9, name: "", category: "", image: "", 
+    link: ""
+  },
+  { 
+    id: 8, name: "", category: "", image: "", 
+    link: ""
+  },
+  { 
+    id: 7, name: "", category: "", image: "", 
+    link: ""
+  },
+  { 
+    id: 6, name: "", category: "", image: "", 
+    link: ""
+  },
+  { 
+    id: 5, name: "", category: "", image: "", 
+    link: ""
+  },
+  */
+  { 
+    id: 4, name: "Stickers & Decal", category: "Accessories", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/car-sticker/j/g/s/2-color-splash-pikachu-sticker-vibrant-artistic-pok-mon-design-original-imahfcvngvbakwvv.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/BRXTMH"
+  },
   { 
     id: 3, 
     name: "Flickering String Lights", 
@@ -186,3 +252,4 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
