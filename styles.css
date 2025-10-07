@@ -223,19 +223,19 @@ header h1 {
 }
    @media (max-width: 1024px) {
     .card img {
-        height: 250px;                 /* slightly smaller for medium screens */
+        height: 220px;                 /* slightly smaller for medium screens */
     }
 }
 
 @media (max-width: 768px) {
     .card img {
-        height: 200px;                 /* mobile-friendly height */
+        height: 170px;                 /* mobile-friendly height */
     }
 }
 
 @media (max-width: 480px) {
     .card img {
-        height: 180px;                 /* small mobile screens */
+        height: 150px;                 /* small mobile screens */
     }
 }
 
@@ -336,6 +336,7 @@ header h1 {
         flex: 0 0 auto; /* ✅ Prevent shrinking */
     }
 }
+
 
 
 
