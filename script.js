@@ -57,12 +57,12 @@ const products = [
   { 
     id: 6, name: "", category: "", image: "", 
     link: ""
-  },
+  },*/
   { 
-    id: 5, name: "", category: "", image: "", 
-    link: ""
+    id: 5, name: "WiFi Bulb Camera", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/home-security-camera/0/g/z/2-wifi-bulb-camera-1080p-with-360-view-wireless-smart-ip-cctv-original-imahfcty5kpwgtjk.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/s0H6mm"
   },
-  */
+  
   { 
     id: 4, name: "Stickers & Decal", category: "Accessories", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/car-sticker/j/g/s/2-color-splash-pikachu-sticker-vibrant-artistic-pok-mon-design-original-imahfcvngvbakwvv.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/BRXTMH"
@@ -252,6 +252,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
