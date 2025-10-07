@@ -69,7 +69,7 @@ const products = [
   },
   { 
     id: 3, 
-    name: "Flickering String Lights", 
+    name: "String Lights", 
     category: "Home Appliances", 
     image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/i/z/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhghpvstnt.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/VJeUBD"
@@ -252,4 +252,5 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
