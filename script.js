@@ -31,15 +31,16 @@ const products = [
   },{ 
     id: 13, name: "", category: "", image: "", 
     link: ""
-  },{ 
-    id: 12, name: "", category: "", image: "", 
-    link: ""
-  },{ 
-    id: 11, name: "", category: "", image: "", 
-    link: ""
   },*/
   { 
-    id: 10, name: "Thermal Laminator", category: "Electronics", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/lamination-machine/x/j/m/9-05-4-98-lm-mini-vms-original-imahdh5vczeaydj3.jpeg?q=70&crop=false", 
+    id: 12, name: "Exhaust Fan", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/exhaust-fan/c/9/l/8-200mm-inline-duct-fan-silent-mix-flow-circular-inline-fan-original-imahfp4exhadspzy.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/sE85Rz"
+  },{ 
+    id: 11, name: "Decorative Wallpaper", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/wallpaper/2/y/0/70-77-1-pack-of-1-gold-foamsheet-1pc-a-ingorala-original-imahdq5gtaa4zz8x.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/5RitVE"
+  },
+  { 
+    id: 10, name: "Thermal Laminator", category: "Electronics", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/lamination-machine/x/l/v/9-05-4-98-lm-mini-vms-original-imahdh5vcejpmx2a.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/5V9YNQ"
   },
   { 
@@ -47,7 +48,7 @@ const products = [
     link: "https://fkrt.co/YGaj29"
   },
   { 
-    id: 8, name: "Sealing Machine", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/heat-sealer/f/e/1/10-50-portable-mini-food-sealing-machine-with-cutter-magnet-usb-original-imahg2d5a3pguyyz.jpeg?q=70&crop=false", 
+    id: 8, name: "Sealing Machine", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/heat-sealer/f/e/1/10-50-portable-mini-food-sealing-machine-with-cutter-magnet-usb-original-imahg2d5a3pguyyz.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/LeNDeg"
   },
   { 
@@ -252,6 +253,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
