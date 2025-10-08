@@ -41,17 +41,17 @@ const products = [
   { 
     id: 10, name: "", category: "", image: "", 
     link: ""
-  },
-  { 
-    id: 9, name: "", category: "", image: "", 
-    link: ""
-  },
-  { 
-    id: 8, name: "", category: "", image: "", 
-    link: ""
   },*/
   { 
-    id: 7, name: "Number Lock", category: "Gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/lock/s/5/u/combination-combination-lock-10-digit-push-button-combination-original-imah4ky2crkcp67n.jpeg?q=70&crop=false", 
+    id: 9, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/YGaj29"
+  },
+  { 
+    id: 8, name: "Sealing Machine", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/heat-sealer/f/e/1/10-50-portable-mini-food-sealing-machine-with-cutter-magnet-usb-original-imahg2d5a3pguyyz.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/LeNDeg"
+  },
+  { 
+    id: 7, name: "Number Lock", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/lock/s/5/u/combination-combination-lock-10-digit-push-button-combination-original-imah4ky2crkcp67n.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/3xSoet"
   },
   { 
@@ -252,6 +252,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
