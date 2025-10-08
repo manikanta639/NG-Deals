@@ -37,11 +37,11 @@ const products = [
   },{ 
     id: 11, name: "", category: "", image: "", 
     link: ""
-  },
-  { 
-    id: 10, name: "", category: "", image: "", 
-    link: ""
   },*/
+  { 
+    id: 10, name: "Thermal Laminator", category: "Electronics", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/lamination-machine/x/j/m/9-05-4-98-lm-mini-vms-original-imahdh5vczeaydj3.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/5V9YNQ"
+  },
   { 
     id: 9, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/YGaj29"
@@ -252,6 +252,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
