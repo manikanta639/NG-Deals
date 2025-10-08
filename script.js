@@ -49,11 +49,11 @@ const products = [
   { 
     id: 8, name: "", category: "", image: "", 
     link: ""
-  },
-  { 
-    id: 7, name: "", category: "", image: "", 
-    link: ""
   },*/
+  { 
+    id: 7, name: "Number Lock", category: "Gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/lock/s/5/u/combination-combination-lock-10-digit-push-button-combination-original-imah4ky2crkcp67n.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/3xSoet"
+  },
   { 
     id: 6, name: "Wire Stripper", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/plier/h/z/t/10-5-in-1-multifunctional-wire-stripper-combination-original-imah5ggstt5ahjaf.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/YhPPww"
@@ -252,6 +252,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
