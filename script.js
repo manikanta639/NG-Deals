@@ -22,16 +22,18 @@ const products = [
   },{ 
     id: 16, name: "", category: "", image: "", 
     link: ""
-  },{ 
-    id: 15, name: "", category: "", image: "", 
-    link: ""
-  },{ 
-    id: 14, name: "", category: "", image: "", 
-    link: ""
-  },{ 
-    id: 13, name: "", category: "", image: "", 
-    link: ""
   },*/
+  { 
+    id: 15, name: "Sewing Machine", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/sewing-machine/b/s/d/multifunctional-dual-speed-portable-sewing-machine-with-light-original-imah5r2fzfqcs3gy.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/mQm3Gn"
+  },
+  { 
+    id: 14, name: "Gps Tracker", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/gps-device/e/5/a/gf-08-mini-portable-real-time-personal-and-vehicle-gps-tracker-original-imahgeqvfhj7rhhu.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/iy5DTt"
+  },{ 
+    id: 13, name: "Car & Bike Stickers", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/car-sticker/5/p/3/20-20-pcs-multicolor-reflective-glowing-car-wheel-stickers-8-original-imahbpx9v7ba3gjf.jpeg?q=70&crop=false", 
+    link: "https://fkrt.co/IqBMhM"
+  },
   { 
     id: 12, name: "Exhaust Fan", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/exhaust-fan/c/9/l/8-200mm-inline-duct-fan-silent-mix-flow-circular-inline-fan-original-imahfp4exhadspzy.jpeg?q=70&crop=false", 
     link: "https://fkrt.co/sE85Rz"
@@ -253,6 +255,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
