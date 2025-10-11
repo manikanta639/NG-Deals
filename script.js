@@ -43,9 +43,9 @@ const products = [
   { id: 21, name: "", category: "", image: "", link: ""},
   { id: 20, name: "", category: "", image: "", link: ""},
   { id: 19, name: "", category: "", image: "", link: ""},
-  { id: 18, name: "", category: "", image: "", link: ""},
-  { id: 17, name: "", category: "", image: "", link: ""},
   */
+  { id: 18, name: "Design Switch Board", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/sticker/t/a/u/medium-heart-design-switch-board-6-25-dbbb0041-decor-villa-original-imah9u2fahfqsyf6.jpeg?q=70&crop=false", link: "https://fkrt.co/wUAW2P"},
+  { id: 17, name: "3D Drawing Pen", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/art-craft-kit/x/h/b/6-3d-printing-drawing-pen-with-3-pla-filaments-with-cable-random-original-imagwxeatesdzh5y.jpeg?q=70&crop=false", link: "https://fkrt.co/AjcglC"},
   { id: 16, name: "Neck Fan", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/usb-gadget/o/5/y/super-quiet-3-speeds-personal-wearable-hemovia-original-imahdqf9mjktgyze.jpeg?q=70&crop=false", link: "https://fkrt.co/qx7FZ6"},
   { id: 15, name: "Sewing Machine", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/sewing-machine/b/s/d/multifunctional-dual-speed-portable-sewing-machine-with-light-original-imah5r2fzfqcs3gy.jpeg?q=70&crop=false", link: "https://fkrt.co/mQm3Gn"},
   { id: 14, name: "Gps Tracker", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/gps-device/e/5/a/gf-08-mini-portable-real-time-personal-and-vehicle-gps-tracker-original-imahgeqvfhj7rhhu.jpeg?q=70&crop=false", link: "https://fkrt.co/iy5DTt"},
@@ -226,6 +226,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
