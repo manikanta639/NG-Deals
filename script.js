@@ -42,8 +42,8 @@ const products = [
   { id: 22, name: "", category: "", image: "", link: ""},
   { id: 21, name: "", category: "", image: "", link: ""},
   { id: 20, name: "", category: "", image: "", link: ""},
-  { id: 19, name: "", category: "", image: "", link: ""},
   */
+  { id: 19, name: "Nature Wallpaper", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/wallpaper/4/u/e/30-30-1-premium-wall-stickersheet-for-decoration-pack-of-1-original-imahdpxybgwjcv2w.jpeg?q=70&crop=false", link: "https://fkrt.co/omCxvV"},
   { id: 18, name: "Design Switch Board", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/sticker/t/a/u/medium-heart-design-switch-board-6-25-dbbb0041-decor-villa-original-imah9u2fahfqsyf6.jpeg?q=70&crop=false", link: "https://fkrt.co/wUAW2P"},
   { id: 17, name: "3D Drawing Pen", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/art-craft-kit/x/h/b/6-3d-printing-drawing-pen-with-3-pla-filaments-with-cable-random-original-imagwxeatesdzh5y.jpeg?q=70&crop=false", link: "https://fkrt.co/AjcglC"},
   { id: 16, name: "Neck Fan", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/usb-gadget/o/5/y/super-quiet-3-speeds-personal-wearable-hemovia-original-imahdqf9mjktgyze.jpeg?q=70&crop=false", link: "https://fkrt.co/qx7FZ6"},
@@ -226,6 +226,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
