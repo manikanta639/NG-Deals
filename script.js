@@ -40,9 +40,8 @@ const products = [
   { id: 24, name: "", category: "", image: "", link: ""},
   { id: 23, name: "", category: "", image: "", link: ""},
   { id: 22, name: "", category: "", image: "", link: ""},
-  { id: 21, name: "", category: "", image: "", link: ""},
-  { id: 20, name: "", category: "", image: "", link: ""},
-  */
+  { id: 21, name: "", category: "", image: "", link: ""},*/
+  { id: 20, name: "Electric Chopper", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/chopper/r/m/r/premium-electric-chopper-with-3-unique-attachments-garlic-peeler-original-imahdy7kvfteyruw.jpeg?q=70&crop=false", link: "https://fkrt.co/Fz4gyC"},
   { id: 19, name: "Nature Wallpaper", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/wallpaper/4/u/e/30-30-1-premium-wall-stickersheet-for-decoration-pack-of-1-original-imahdpxybgwjcv2w.jpeg?q=70&crop=false", link: "https://fkrt.co/omCxvV"},
   { id: 18, name: "Design Switch Board", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/sticker/t/a/u/medium-heart-design-switch-board-6-25-dbbb0041-decor-villa-original-imah9u2fahfqsyf6.jpeg?q=70&crop=false", link: "https://fkrt.co/wUAW2P"},
   { id: 17, name: "3D Drawing Pen", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/art-craft-kit/x/h/b/6-3d-printing-drawing-pen-with-3-pla-filaments-with-cable-random-original-imagwxeatesdzh5y.jpeg?q=70&crop=false", link: "https://fkrt.co/AjcglC"},
@@ -226,6 +225,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
