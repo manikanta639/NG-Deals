@@ -7,26 +7,26 @@ const products = [
   { id: 57, name: "", category: "", image: "", link: ""},
   { id: 56, name: "", category: "", image: "", link: ""},
   { id: 55, name: "", category: "", image: "", link: ""},
-  { id: 54, name: "", category: "", image: "", link: ""},
-  { id: 53, name: "", category: "", image: "", link: ""},
-  { id: 52, name: "", category: "", image: "", link: ""},
-  { id: 51, name: "", category: "", image: "", link: ""},
-  { id: 50, name: "", category: "", image: "", link: ""},
-  { id: 49, name: "", category: "", image: "", link: ""},
-  { id: 48, name: "", category: "", image: "", link: ""},
-  { id: 47, name: "", category: "", image: "", link: ""},
-  { id: 46, name: "", category: "", image: "", link: ""},
-  { id: 45, name: "", category: "", image: "", link: ""},
-  { id: 44, name: "", category: "", image: "", link: ""},
-  { id: 43, name: "", category: "", image: "", link: ""},
-  { id: 42, name: "", category: "", image: "", link: ""},
-  { id: 41, name: "", category: "", image: "", link: ""},
-  { id: 40, name: "", category: "", image: "", link: ""},
-  { id: 39, name: "", category: "", image: "", link: ""},
-  { id: 38, name: "", category: "", image: "", link: ""},
-  { id: 37, name: "", category: "", image: "", link: ""},
-  { id: 36, name: "", category: "", image: "", link: ""},
-  { id: 35, name: "", category: "", image: "", link: ""},*/
+  { id: 54, name: "", category: "", image: "", link: ""},*/
+  { id: 53, name: "Needle Threader Tool", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/seam-ripper/8/j/z/1-2-in-1-needle-threader-tool-domestic-use-sewing-needle-original-imahaxtgraznvyth.jpeg?q=70&crop=false", link: "https://fkrt.co/xw8G4W"},
+  { id: 52, name: "Solid Crib Blanket", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/blanket/7/v/n/traval-blanket-tsan-302-sanmarino-original-imahdj7byacjyayx.jpeg?q=70&crop=false", link: "https://fkrt.co/qyx9r8"},
+  { id: 51, name: "Leather Bean Bag", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/bean-bag/n/p/4/4xl-filled-bean-bag-giglick-original-imah2szdknadjahj.jpeg?q=70&crop=false", link: "https://fkrt.co/FEZL5e"},
+  { id: 50, name: "Laser Light", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/disco-ball/k/n/5/10-electronics-led-disco-6-modes-combinations-stage-sound-original-imahfrdkhpxjvrnv.jpeg?q=70&crop=false", link: "https://fkrt.co/pMjFDw"},
+  { id: 49, name: "3 Axis Gimbal", category: "Electronics", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/gimbal/n/2/n/-original-imahyy5ff3gmy9qh.jpeg?q=70&crop=false", link: "https://fkrt.co/2pcXKF"},
+  { id: 48, name: "Wall Shelf", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rack-shelf/9/a/b/living-room-bedroom-1-wall-mounted-storage-cabinet-for-kitchen-original-imahg5gyxcznyred.jpeg?q=70&crop=false", link: "https://fkrt.co/yGXdYE"},
+  { id: 47, name: "Portable Stove", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/gas-lighter/v/r/p/1-portable-windproof-mini-folding-camping-stove-with-carrying-original-imahed3wyhs5xtct.jpeg?q=70&crop=false", link: "https://fkrt.co/9v6uIl"},
+  { id: 46, name: "Solar Light", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/solar-light-set/d/m/v/1-ep-yz-sunflower-01-1-2-epyz-original-imahdgffgtuhk2zs.jpeg?q=70&crop=false", link: "https://fkrt.co/bFCnJc"},
+  { id: 45, name: "Adjusting Table", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/outdoor-table/x/u/8/45-7-2-seater-rectangle-olefin-63-5-4-3-scissor-height-adjusting-original-imah5gkehabzzwyn.jpeg?q=70&crop=false", link: "https://fkrt.co/HXeSup"},
+  { id: 44, name: "Foldable Chair", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/outdoor-chair/z/2/c/12-1-aluminium-20-0-3-980-shopivaan-23-black-big-chair-original-imahbk2juuvhpquy.jpeg?q=70&crop=false", link: "https://fkrt.co/3z4JXE"},
+  { id: 43, name: "Storage Bag", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/garment-cover/h/f/v/organizer-blanket-for-wardrobe-combo-of-3-underbed-storage-bag-original-imahdg7ry3azyfeq.jpeg?q=70&crop=false", link: "https://fkrt.co/KCfdaN"},
+  { id: 42, name: "Sand Art Glass", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/showpiece-figurine/f/9/g/3-6-sand-painting-ecowin-6-original-imahg2phnugyey2u.jpeg?q=70&crop=false", link: "https://fkrt.co/iK7Sdm"},
+  { id: 41, name: "Single Bed", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/bed/m/h/n/single-200-black-yes-70-cast-iron-no-10-metal-folding-bed-original-imahe6j9vmuph5sy.jpeg?q=70&crop=false", link: "https://fkrt.co/T3xDga"},
+  { id: 40, name: "Waterproof Glue", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/crack-filler/d/a/y/1-waterproof-transparent-glue-for-leakage-crack-filler-shukan-original-imahdbzk6hzfzhsc.jpeg?q=70&crop=false", link: "https://fkrt.co/u2QeU3"},
+  { id: 39, name: "Stair Climber", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/ab-exerciser/c/5/d/vertical-stair-climber-for-fitness-with-adjustable-handlebars-ac-original-imaheu47pn3cdq9g.jpeg?q=70&crop=false", link: "https://fkrt.co/rnN6p6"},
+  { id: 38, name: "360° Rotate Shelf", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rack-shelf/d/l/o/bathroom-1-corshlv01-demfew-3-original-imagruh5qdegfxaz.jpeg?q=70&crop=false", link: "https://fkrt.co/EhkaQL"},
+  { id: 37, name: "Solar Stake Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/solar-light-set/l/7/r/2-ep-yz-stake-multi-02-2-epyz-original-imahdgffppjjrjhv.jpeg?q=70&crop=false", link: "https://fkrt.co/gEHgEc"},
+  { id: 36, name: "Inflatable Sofa ", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/inflatable-sofa/x/g/d/20-2-seater-25-pvc-0-7-3-min-fast-inflate-air-bed-mattress-for-original-imahf8abhqweh8rh.jpeg?q=70&crop=false", link: "https://fkrt.co/V2jSX2"},
+  { id: 35, name: "Cycle", category: "kids", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cycle/w/i/y/bella-16-inch-turquoise-green-dress-guard-tyre-tube-for-age-5-original-imahc4e6vz6s5xjh.jpeg?q=70&crop=false", link: "https://fkrt.co/XferEZ"},
   { id: 34, name: "Wall Clip", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/hook/k/p/q/8-1-10-pcs-creative-thumb-wall-hooks-zombula-original-imahec7z6rkfjfnp.jpeg?q=70&crop=false", link: "https://fkrt.co/erSw6H"},
   { id: 33, name: "Makeup Organizer", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/vanity-box/f/9/q/portable-dustproof-makeup-organizer-large-cosmetic-storage-original-imagsfyg7vktmvpg.jpeg?q=70&crop=false", link: "https://fkrt.co/D2GsZR"},
   { id: 32, name: "Baby Hair Trimmer", category: "kids", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/trimmer/q/h/s/0-25-4-mm-baby-hair-trimmer-quiet-vacuum-hair-clipper-2-speeds-original-imah8z9z6xc5acfh.jpeg?q=70&crop=false", link: "https://fkrt.co/9ciShC"},
@@ -225,6 +225,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
