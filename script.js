@@ -6,8 +6,8 @@ const products = [
   { id: 58, name: "", category: "", image: "", link: ""},
   { id: 57, name: "", category: "", image: "", link: ""},
   { id: 56, name: "", category: "", image: "", link: ""},
-  { id: 55, name: "", category: "", image: "", link: ""},
-  { id: 54, name: "", category: "", image: "", link: ""},*/
+  { id: 55, name: "", category: "", image: "", link: ""},*/
+  { id: 54, name: "pdf", category: "others", image: "", link: "SLM MID TERM"},
   { id: 53, name: "Needle Threader Tool", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/seam-ripper/8/j/z/1-2-in-1-needle-threader-tool-domestic-use-sewing-needle-original-imahaxtgraznvyth.jpeg?q=70&crop=false", link: "https://fkrt.co/xw8G4W"},
   { id: 52, name: "Solid Crib Blanket", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/blanket/7/v/n/traval-blanket-tsan-302-sanmarino-original-imahdj7byacjyayx.jpeg?q=70&crop=false", link: "https://fkrt.co/qyx9r8"},
   { id: 51, name: "Leather Bean Bag", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/bean-bag/n/p/4/4xl-filled-bean-bag-giglick-original-imah2szdknadjahj.jpeg?q=70&crop=false", link: "https://fkrt.co/FEZL5e"},
@@ -225,6 +225,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
