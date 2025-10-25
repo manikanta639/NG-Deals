@@ -1,6 +1,47 @@
 // Sample Product Data
 const products = [
   /*
+  
+  { id: 100, name: "", category: "", image: "", link: ""},
+  { id: 99, name: "", category: "", image: "", link: ""},
+  { id: 98, name: "", category: "", image: "", link: ""},
+  { id: 97, name: "", category: "", image: "", link: ""},
+  { id: 96, name: "", category: "", image: "", link: ""},
+  { id: 95, name: "", category: "", image: "", link: ""},
+  { id: 94, name: "", category: "", image: "", link: ""},
+  { id: 93, name: "", category: "", image: "", link: ""},
+  { id: 92, name: "", category: "", image: "", link: ""},
+  { id: 91, name: "", category: "", image: "", link: ""},
+  { id: 90, name: "", category: "", image: "", link: ""},
+  { id: 89, name: "", category: "", image: "", link: ""},
+  { id: 88, name: "", category: "", image: "", link: ""},
+  { id: 87, name: "", category: "", image: "", link: ""},
+  { id: 86, name: "", category: "", image: "", link: ""},
+  { id: 85, name: "", category: "", image: "", link: ""},
+  { id: 84, name: "", category: "", image: "", link: ""},
+  { id: 83, name: "", category: "", image: "", link: ""},
+  { id: 82, name: "", category: "", image: "", link: ""},
+  { id: 81, name: "", category: "", image: "", link: ""},
+  { id: 80, name: "", category: "", image: "", link: ""},
+  { id: 79, name: "", category: "", image: "", link: ""},
+  { id: 78, name: "", category: "", image: "", link: ""},
+  { id: 77, name: "", category: "", image: "", link: ""},
+  { id: 76, name: "", category: "", image: "", link: ""},
+  { id: 75, name: "", category: "", image: "", link: ""},
+  { id: 74, name: "", category: "", image: "", link: ""},
+  { id: 73, name: "", category: "", image: "", link: ""},
+  { id: 72, name: "", category: "", image: "", link: ""},
+  { id: 71, name: "", category: "", image: "", link: ""},
+  { id: 70, name: "", category: "", image: "", link: ""},
+  { id: 69, name: "", category: "", image: "", link: ""},
+  { id: 68, name: "", category: "", image: "", link: ""},
+  { id: 67, name: "", category: "", image: "", link: ""},
+  { id: 66, name: "", category: "", image: "", link: ""},
+  { id: 65, name: "", category: "", image: "", link: ""},
+  { id: 64, name: "", category: "", image: "", link: ""},
+  { id: 63, name: "", category: "", image: "", link: ""},
+  { id: 62, name: "", category: "", image: "", link: ""},
+  { id: 61, name: "", category: "", image: "", link: ""},
   { id: 60, name: "", category: "", image: "", link: ""},
   { id: 59, name: "", category: "", image: "", link: ""},
   { id: 58, name: "", category: "", image: "", link: ""},
@@ -225,6 +266,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
