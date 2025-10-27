@@ -30,25 +30,25 @@ const products = [
   { id: 75, name: "", category: "", image: "", link: ""},
   { id: 74, name: "", category: "", image: "", link: ""},
   { id: 73, name: "", category: "", image: "", link: ""},
-  { id: 72, name: "", category: "", image: "", link: ""},
-  { id: 71, name: "", category: "", image: "", link: ""},
-  { id: 70, name: "", category: "", image: "", link: ""},
-  { id: 69, name: "", category: "", image: "", link: ""},
-  { id: 68, name: "", category: "", image: "", link: ""},
-  { id: 67, name: "", category: "", image: "", link: ""},
-  { id: 66, name: "", category: "", image: "", link: ""},
-  { id: 65, name: "", category: "", image: "", link: ""},
-  { id: 64, name: "", category: "", image: "", link: ""},
-  { id: 63, name: "", category: "", image: "", link: ""},
-  { id: 62, name: "", category: "", image: "", link: ""},
-  { id: 61, name: "", category: "", image: "", link: ""},
-  { id: 60, name: "", category: "", image: "", link: ""},
-  { id: 59, name: "", category: "", image: "", link: ""},
-  { id: 58, name: "", category: "", image: "", link: ""},
-  { id: 57, name: "", category: "", image: "", link: ""},
-  { id: 56, name: "", category: "", image: "", link: ""},
-  { id: 55, name: "", category: "", image: "", link: ""},
-  { id: 54, name: "", category: "", image: "", link: ""},*/
+  { id: 72, name: "", category: "", image: "", link: ""},*/
+  { id: 71, name: "Wall Clock", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/wall-clock/i/6/s/peacock-wall-clock-25-m2695-analog-malik-designs-25-original-imahe3duvdfa4v22.jpeg?q=70&crop=false", link: "https://fkrt.co/n0Owhk"},
+  { id: 70, name: "Fuel Camp Stove", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/camp-stove/i/v/7/1-arjun-earthfit-original-imahgqvkjhrnht3w.jpeg?q=70&crop=false", link: "https://fkrt.co/fFnYn0"},
+  { id: 69, name: "Shoe Stand", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe-rack/p/e/y/36-60-4-psrbw5088-np-hvrd-black-white-108-original-imahfjzyemgfzbhh.jpeg?q=70&crop=false", link: "https://fkrt.co/I18OD2"},
+  { id: 68, name: "Bedding Set", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/bedding-set/y/j/a/yellow-comforter-set-double-king-yellow-comforter-set-homerica-original-imahfqqdzxvhnjzp.jpeg?q=70&crop=false", link: "https://fkrt.co/VTyI9g"},
+  { id: 67, name: "Phone Stand", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile-holder/z/v/a/sticky-pad-wall-mounted-mobile-holder-mobile-stand-universal-original-imahfg6q9htp3tyj.jpeg?q=70&crop=false", link: "https://fkrt.co/tJV2PV"},
+  { id: 66, name: "Single Curtain", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/curtain/e/y/7/string-beats-1-200-door-str0013-rod-pocket-sukh-traders-original-imah2huzghbtzg9g.jpeg?q=70&crop=false", link: "https://fkrt.co/xTjHVO"},
+  { id: 65, name: "Night Lamp", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/table-lamp/r/b/5/auto-on-off-sensor-mushroom-shape-led-night-lamp-with-multicolor-original-imagg48jsdqw8pgr.jpeg?q=70&crop=false", link: "https://fkrt.co/0MDrMi"},
+  { id: 64, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", link: "https://fkrt.co/UmviAx"},
+  { id: 63, name: "Juicer Mixer", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mixer-grinder-juicer/9/i/d/vr162024-wipro-original-imagwhh6h2qp784r.jpeg?q=70&crop=false", link: "https://fkrt.co/bIAgRh"},
+  { id: 62, name: "Utensil Holder Stand", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/kitchen-rack/g/f/o/2-tier-carbon-steel-over-sink-kitchen-storage-rack-organizer-original-imahg2f7chczgzxb.jpeg?q=70&crop=false", link: "https://fkrt.co/Uh57zo"},
+  { id: 61, name: "Garment Steamer", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/iron/i/c/r/mini-steam-iron-portable-1500-watts-vertical-horizontal-travel-original-imaheyh6nshptgp5.jpeg?q=70&crop=false", link: "https://fkrt.co/rz0xxW"},
+  { id: 60, name: "Lint Roller", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/kz5vwy80/lint-roller/c/r/w/portable-manual-reusable-lint-hair-remover-for-clothest-pack-of-original-imagb8gunuemfaqp.jpeg?q=70&crop=false", link: "https://fkrt.co/dqe61h"},
+  { id: 59, name: "Washing Machine", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/washing-machine-door-hinge/b/y/7/foldable-washing-spin-dry-for-baby-clothes-travel-and-easy-1-5-original-imahfhgnvrg2ujkx.jpeg?q=70&crop=false", link: "https://fkrt.co/LoYzHB", link: "https://fkrt.co/6d3x7K"},
+  { id: 58, name: "Mattress Cover", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mattress-protector/8/y/e/mat-fitted-teal-la-verne-original-imahawvu3thwygyh.jpeg?q=70&crop=false", link: "https://fkrt.co/df7rdg"},
+  { id: 57, name: "Foam Mattress", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/bed-mattress/2/u/t/pillow-top-single-2-2-inch-thick-3-fold-light-weight-foldable-original-imagxczgtdhrztua.jpeg?q=70&crop=false", link: "https://fkrt.co/vAon80"},
+  { id: 56, name: "Tooth Repair Kit", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/dental-floss-stick/p/d/a/tooth-repair-kit-30ml-moldable-beads-for-temporary-teeth-fixes-1-original-imahbxh2x9ygkbxn.jpeg?q=70&crop=false", link: "https://fkrt.co/LOrU4a"},
+  { id: 55, name: "Washing Machine", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/washing-machine-door-hinge/b/y/7/foldable-washing-spin-dry-for-baby-clothes-travel-and-easy-1-5-original-imahfhgnvrg2ujkx.jpeg?q=70&crop=false", link: "https://fkrt.co/LoYzHB"},
+  { id: 54, name: "Electric Kettle", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/electric-kettle/s/0/o/3-in-1-cook-kettle-widemouth-pot-non-stick-2-temp-settings-busy-original-imahfse8hjh68dzu.jpeg?q=70&crop=false", link: "https://fkrt.co/25v1rd"},
   { id: 53, name: "Needle Threader Tool", category: "others", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/seam-ripper/8/j/z/1-2-in-1-needle-threader-tool-domestic-use-sewing-needle-original-imahaxtgraznvyth.jpeg?q=70&crop=false", link: "https://fkrt.co/xw8G4W"},
   { id: 52, name: "Solid Crib Blanket", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/blanket/7/v/n/traval-blanket-tsan-302-sanmarino-original-imahdj7byacjyayx.jpeg?q=70&crop=false", link: "https://fkrt.co/qyx9r8"},
   { id: 51, name: "Leather Bean Bag", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/bean-bag/n/p/4/4xl-filled-bean-bag-giglick-original-imah2szdknadjahj.jpeg?q=70&crop=false", link: "https://fkrt.co/FEZL5e"},
@@ -266,6 +266,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
