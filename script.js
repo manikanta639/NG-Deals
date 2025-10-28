@@ -29,8 +29,8 @@ const products = [
   { id: 76, name: "", category: "", image: "", link: ""},
   { id: 75, name: "", category: "", image: "", link: ""},
   { id: 74, name: "", category: "", image: "", link: ""},
-  { id: 73, name: "", category: "", image: "", link: ""},
-  { id: 72, name: "", category: "", image: "", link: ""},*/
+  { id: 73, name: "", category: "", image: "", link: ""},*/
+  { id: 72, name: "Shiva Smoke Fountain", category: "others", image: "https://images.meesho.com/images/products/240231977/tfzya_512.avif?width=512", link: "https://msho.in/wlDOZX"},
   { id: 71, name: "Wall Clock", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/wall-clock/i/6/s/peacock-wall-clock-25-m2695-analog-malik-designs-25-original-imahe3duvdfa4v22.jpeg?q=70&crop=false", link: "https://fkrt.co/n0Owhk"},
   { id: 70, name: "Fuel Camp Stove", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/camp-stove/i/v/7/1-arjun-earthfit-original-imahgqvkjhrnht3w.jpeg?q=70&crop=false", link: "https://fkrt.co/fFnYn0"},
   { id: 69, name: "Shoe Stand", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe-rack/p/e/y/36-60-4-psrbw5088-np-hvrd-black-white-108-original-imahfjzyemgfzbhh.jpeg?q=70&crop=false", link: "https://fkrt.co/I18OD2"},
@@ -266,6 +266,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
