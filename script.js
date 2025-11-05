@@ -42,7 +42,7 @@ const products = [
   { id: 66, name: "Single Curtain", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/curtain/e/y/7/string-beats-1-200-door-str0013-rod-pocket-sukh-traders-original-imah2huzghbtzg9g.jpeg?q=70&crop=false", link: "https://fkrt.co/xTjHVO"},
   { id: 65, name: "Night Lamp", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/table-lamp/r/b/5/auto-on-off-sensor-mushroom-shape-led-night-lamp-with-multicolor-original-imagg48jsdqw8pgr.jpeg?q=70&crop=false", link: "https://fkrt.co/0MDrMi"},
 
-  { id: 641, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", link: "C PROGRAMM"},
+  { id: 641, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", link: "C PROGRAMM.docx"},
   
   { id: 64, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", link: "https://fkrt.co/UmviAx"},
   { id: 63, name: "Juicer Mixer", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mixer-grinder-juicer/9/i/d/vr162024-wipro-original-imagwhh6h2qp784r.jpeg?q=70&crop=false", link: "https://fkrt.co/bIAgRh"},
@@ -272,6 +272,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
