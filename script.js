@@ -28,12 +28,6 @@ const products = [
   { id: 77, name: "", category: "", image: "", link: ""},
   { id: 76, name: "", category: "", image: "", link: ""},
   { id: 75, name: "", category: "", image: "", link: ""},*/
-  { id: 74, name: "Mobile Holder", category: "others", image: "https://images.meesho.com/images/products/154599910/tg3yx_512.avif?width=512", link: "https://msho.in/dJNgVz"},
-  { id: 73, name: "Mosquito Killer", category: "others", image: "https://images.meesho.com/images/products/530959420/vphje_512.avif?width=512", link: "https://msho.in/opcCfY"},
-  { id: 72, name: "Shiva Smoke Fountain", category: "others", image: "https://images.meesho.com/images/products/240231977/tfzya_512.avif?width=512", link: "https://msho.in/wlDOZX"},
-
-
-  
   { id: 71, name: "Wall Clock", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/wall-clock/i/6/s/peacock-wall-clock-25-m2695-analog-malik-designs-25-original-imahe3duvdfa4v22.jpeg?q=70&crop=false", link: "https://fkrt.co/n0Owhk"},
   { id: 70, name: "Fuel Camp Stove", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/camp-stove/i/v/7/1-arjun-earthfit-original-imahgqvkjhrnht3w.jpeg?q=70&crop=false", link: "https://fkrt.co/fFnYn0"},
   { id: 69, name: "Shoe Stand", category: "furniture", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe-rack/p/e/y/36-60-4-psrbw5088-np-hvrd-black-white-108-original-imahfjzyemgfzbhh.jpeg?q=70&crop=false", link: "https://fkrt.co/I18OD2"},
@@ -41,9 +35,6 @@ const products = [
   { id: 67, name: "Phone Stand", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile-holder/z/v/a/sticky-pad-wall-mounted-mobile-holder-mobile-stand-universal-original-imahfg6q9htp3tyj.jpeg?q=70&crop=false", link: "https://fkrt.co/tJV2PV"},
   { id: 66, name: "Single Curtain", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/curtain/e/y/7/string-beats-1-200-door-str0013-rod-pocket-sukh-traders-original-imah2huzghbtzg9g.jpeg?q=70&crop=false", link: "https://fkrt.co/xTjHVO"},
   { id: 65, name: "Night Lamp", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/table-lamp/r/b/5/auto-on-off-sensor-mushroom-shape-led-night-lamp-with-multicolor-original-imagg48jsdqw8pgr.jpeg?q=70&crop=false", link: "https://fkrt.co/0MDrMi"},
-
-  { id: 641, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", link: "C PROGRAMM.docx"},
-  
   { id: 64, name: "String Lights", category: "gadjets", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/rice-light/g/2/3/280-string-3-05-1-hdrl-new-10x10-fountain-multi-01-home-delight-original-imah4kfhdszs5cnh.jpeg?q=70&crop=false", link: "https://fkrt.co/UmviAx"},
   { id: 63, name: "Juicer Mixer", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/mixer-grinder-juicer/9/i/d/vr162024-wipro-original-imagwhh6h2qp784r.jpeg?q=70&crop=false", link: "https://fkrt.co/bIAgRh"},
   { id: 62, name: "Utensil Holder Stand", category: "home appliances", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/kitchen-rack/g/f/o/2-tier-carbon-steel-over-sink-kitchen-storage-rack-organizer-original-imahg2f7chczgzxb.jpeg?q=70&crop=false", link: "https://fkrt.co/Uh57zo"},
@@ -272,6 +263,7 @@ window.onload = function() {
   renderProducts(products);
   document.body.style.opacity = 1;
 };
+
 
 
 
