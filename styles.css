@@ -33,7 +33,7 @@ header {
     margin-bottom: 10px;
 }
 header h1 {
-    margin: 5px 0;
+    margin: 1px 0;
     font-size: 30px;
 }
 
@@ -336,6 +336,7 @@ header h1 {
         flex: 0 0 auto; /* ✅ Prevent shrinking */
     }
 }
+
 
 
 
